@@ -49,7 +49,7 @@
           <OutputName>Project</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\Listings\</ListingPath>
@@ -187,7 +187,7 @@
         <Target51>
           <Target51Misc>
             <MemoryModel>0</MemoryModel>
-            <RTOS>0</RTOS>
+            <RTOS>1</RTOS>
             <RomSize>2</RomSize>
             <DataHold>0</DataHold>
             <XDataHold>0</XDataHold>
@@ -233,7 +233,7 @@
               <RCB>
                 <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
-                <Size>0x0</Size>
+                <Size>0xffff</Size>
               </RCB>
               <RXB>
                 <Type>0</Type>
@@ -324,7 +324,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>.\App;.\App\Modules;.\App\Modules\Light_Control;.\Lib;.\Lib\Drivers;.\Lib\HAL;.\Lib\STC8H_Lib</IncludePath>
             </VariousControls>
           </C51>
           <Ax51>
@@ -348,7 +348,7 @@
             <DataOverlaying>1</DataOverlaying>
             <OverlayString></OverlayString>
             <MiscControls></MiscControls>
-            <DisableWarningNumbers></DisableWarningNumbers>
+            <DisableWarningNumbers>16</DisableWarningNumbers>
             <LinkerCmdFile></LinkerCmdFile>
             <Assign></Assign>
             <ReserveString></ReserveString>
@@ -374,12 +374,143 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Source Group 1</GroupName>
+          <GroupName>APP</GroupName>
           <Files>
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
+              <FilePath>.\App\main.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>App/Modules</GroupName>
+        </Group>
+        <Group>
+          <GroupName>App/Modules/Light_Control</GroupName>
+          <Files>
+            <File>
+              <FileName>light_control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\App\Modules\Light_Control\light_control.c</FilePath>
+            </File>
+            <File>
+              <FileName>light_control.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\App\Modules\Light_Control\light_control.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Lib</GroupName>
+        </Group>
+        <Group>
+          <GroupName>Lib/STC8H_Lib</GroupName>
+          <Files>
+            <File>
+              <FileName>Config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\STC8H_Lib\Config.h</FilePath>
+            </File>
+            <File>
+              <FileName>STC8G_H_ADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8G_H_ADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>STC8G_H_ADC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8G_H_ADC.h</FilePath>
+            </File>
+            <File>
+              <FileName>STC8G_H_Delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8G_H_Delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>STC8G_H_Delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8G_H_Delay.h</FilePath>
+            </File>
+            <File>
+              <FileName>STC8G_H_GPIO.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8G_H_GPIO.c</FilePath>
+            </File>
+            <File>
+              <FileName>STC8G_H_GPIO.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8G_H_GPIO.h</FilePath>
+            </File>
+            <File>
+              <FileName>STC8G_H_NVIC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8G_H_NVIC.c</FilePath>
+            </File>
+            <File>
+              <FileName>STC8G_H_NVIC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8G_H_NVIC.h</FilePath>
+            </File>
+            <File>
+              <FileName>STC8G_H_Switch.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8G_H_Switch.h</FilePath>
+            </File>
+            <File>
+              <FileName>STC8G_H_UART.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8G_H_UART.c</FilePath>
+            </File>
+            <File>
+              <FileName>STC8G_H_UART.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8G_H_UART.h</FilePath>
+            </File>
+            <File>
+              <FileName>STC8G_H_UART_Isr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8G_H_UART_Isr.c</FilePath>
+            </File>
+            <File>
+              <FileName>STC8H.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8H.h</FilePath>
+            </File>
+            <File>
+              <FileName>STC8H_PWM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8H_PWM.c</FilePath>
+            </File>
+            <File>
+              <FileName>STC8H_PWM.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\STC8H_Lib\STC8H_PWM.h</FilePath>
+            </File>
+            <File>
+              <FileName>Type_def.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\STC8H_Lib\Type_def.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Lib/HAL</GroupName>
+          <Files>
+            <File>
+              <FileName>hal_light.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Lib\HAL\hal_light.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Lib/Drivers</GroupName>
+          <Files>
+            <File>
+              <FileName>stc8h_light.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Lib\Drivers\stc8h_light.c</FilePath>
             </File>
           </Files>
         </Group>
