@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "name": "Target_1",
+            "includePath": [
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\App",
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\App\\Modules",
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\App\\Modules\\Light_Control",
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\Lib",
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\Lib\\Drivers",
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\Lib\\HAL",
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\Lib\\STC8H_Lib"
+            ],
+            "defines": [
+                "__C51__",
+                "__VSCODE_C51__",
+                "reentrant=",
+                "compact=",
+                "small=",
+                "large=",
+                "data=",
+                "idata=",
+                "pdata=",
+                "bdata=",
+                "xdata=",
+                "code=",
+                "bit=char",
+                "sbit=char",
+                "sfr=char",
+                "sfr16=int",
+                "sfr32=int",
+                "interrupt=",
+                "using=",
+                "_at_=",
+                "_priority_=",
+                "_task_="
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

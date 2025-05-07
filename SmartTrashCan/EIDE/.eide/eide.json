@@ -98,11 +98,7 @@
           },
           {
             "name": "HAL",
-            "files": [
-              {
-                "path": "../Lib/HAL/hal_light.h"
-              }
-            ],
+            "files": [],
             "folders": []
           },
           {
@@ -159,7 +155,7 @@
           "beforeBuildTasks": [],
           "afterBuildTasks": [],
           "global": {
-            "ram-mode": "SMALL",
+            "ram-mode": "LARGE",
             "rom-mode": "LARGE"
           },
           "c/cpp-compiler": {
@@ -170,7 +166,7 @@
           "linker": {
             "remove-unused": true,
             "output-format": "elf",
-            "misc-controls": ""
+            "use-RTX": "RTX-Tiny"
           }
         }
       }
