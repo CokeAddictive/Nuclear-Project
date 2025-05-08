@@ -3,13 +3,13 @@
         {
             "name": "Target_1",
             "includePath": [
-                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\App",
-                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\App\\Modules",
-                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\App\\Modules\\Light_Control",
-                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\Lib",
-                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\Lib\\Drivers",
-                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\Lib\\HAL",
-                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\SmartTrashCan\\Lib\\STC8H_Lib"
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\Smart_Garbage\\App",
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\Smart_Garbage\\App\\Modules",
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\Smart_Garbage\\App\\Modules\\Light_Control",
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\Smart_Garbage\\Lib",
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\Smart_Garbage\\Lib\\Drivers",
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\Smart_Garbage\\Lib\\HAL",
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\Smart_Garbage\\Lib\\STC8H_Lib"
             ],
             "defines": [
                 "__C51__",

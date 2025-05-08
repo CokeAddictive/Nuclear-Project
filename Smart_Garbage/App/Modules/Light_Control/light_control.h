@@ -5,10 +5,10 @@
 #include "RTX51TNY.H"
 
 typedef enum {
-    LIGHT_MODE_OFF,     // 关闭所有灯光
-    LIGHT_MODE_LEFT,    // 左转灯模式
-    LIGHT_MODE_RIGHT,   // 右转灯模式
-    LIGHT_MODE_HAZARD    // 双闪警示灯模式
+    LIGHT_MODE_OFF,     
+    LIGHT_MODE_LEFT,    
+    LIGHT_MODE_RIGHT,   
+    LIGHT_MODE_HAZARD    
 } Light_Mode_t;
 
 void LightControl_Init();

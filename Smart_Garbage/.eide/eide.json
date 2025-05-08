@@ -1,0 +1,77 @@
+{
+  "name": "Project",
+  "type": "C51",
+  "dependenceList": [],
+  "srcDirs": [
+    "App",
+    "Lib",
+    "Src"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": []
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "6cbd058d92979186cc4e4b3a66edaa69"
+  },
+  "targets": {
+    "Target_1": {
+      "excludeList": [],
+      "toolchain": "Keil_C51",
+      "compileConfig": {
+        "options": "null"
+      },
+      "uploader": "Custom",
+      "uploadConfig": {
+        "bin": "",
+        "commandLine": "python ./tools/stcflash.py -p ${port} \"${programFile}\"",
+        "eraseChipCommand": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../../../../../Software/keil5/C51/INC/STC",
+          "App",
+          "App/Modules",
+          "App/Modules/Light_Control",
+          "Lib",
+          "Lib/Drivers",
+          "Lib/HAL",
+          "Lib/STC8H_Lib",
+          "Src",
+          "App/Modules/Engine_Control",
+          "App/Modules/Uart_Control"
+        ],
+        "libList": [],
+        "defineList": []
+      },
+      "builderOptions": {
+        "Keil_C51": {
+          "version": 2,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "ram-mode": "LARGE",
+            "rom-mode": "LARGE"
+          },
+          "c/cpp-compiler": {
+            "optimization-type": "SPEED",
+            "optimization-level": "level-8"
+          },
+          "asm-compiler": {},
+          "linker": {
+            "remove-unused": true,
+            "output-format": "elf",
+            "use-RTX": "RTX-Tiny"
+          }
+        }
+      }
+    }
+  },
+  "version": "3.5"
+}
