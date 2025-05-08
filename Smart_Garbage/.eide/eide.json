@@ -45,7 +45,8 @@
           "Lib/STC8H_Lib",
           "Src",
           "App/Modules/Engine_Control",
-          "App/Modules/Uart_Control"
+          "App/Modules/Uart_Control",
+          "App/Modules/Nixie_Control"
         ],
         "libList": [],
         "defineList": []
