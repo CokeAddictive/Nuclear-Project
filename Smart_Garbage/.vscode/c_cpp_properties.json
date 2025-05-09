@@ -9,7 +9,8 @@
                 "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\Smart_Garbage\\Lib",
                 "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\Smart_Garbage\\Lib\\Drivers",
                 "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\Smart_Garbage\\Lib\\HAL",
-                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\Smart_Garbage\\Lib\\STC8H_Lib"
+                "c:\\Users\\aliea\\Desktop\\Nuclear-Project\\Smart_Garbage\\Lib\\STC8H_Lib",
+                "C:\\Software\\keil5\\C51\\INC"
             ],
             "defines": [
                 "__C51__",

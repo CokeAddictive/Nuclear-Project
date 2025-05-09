@@ -46,7 +46,8 @@
           "Src",
           "App/Modules/Engine_Control",
           "App/Modules/Uart_Control",
-          "App/Modules/Nixie_Control"
+          "App/Modules/Nixie_Control",
+          "App/Modules/Oled_Control"
         ],
         "libList": [],
         "defineList": []
